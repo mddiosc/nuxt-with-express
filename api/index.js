@@ -16,10 +16,6 @@ const articles = require('./routes/articles')
 app.use(users)
 app.use(articles)
 
-app.set('port', process.env.PORT || 3000)
-
-app.listen(port, () => {})
-
 // Export the server middleware
 module.exports = {
   path: '/api',
