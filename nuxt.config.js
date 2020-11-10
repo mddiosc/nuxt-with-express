@@ -68,7 +68,7 @@ export default {
   },
 
   server: {
-    port: 443, // default: 3000
+    port: process.env.PORT, // default: 3000
     host: process.env.URL, // default: localhost,
     timing: false,
   },
